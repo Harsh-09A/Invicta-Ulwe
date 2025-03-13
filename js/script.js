@@ -14,3 +14,13 @@ function toggleContent(dotsId, moreTextId, btnId) {
     moreText.style.display = "inline";
   }
 }
+
+// AOS Animation
+AOS.init();
+
+// // Popup Modal
+// $(window).ready(function () {
+//   setTimeout(function () {
+//     $("#popupModal").modal("show");
+//   }, 3000);
+// });
