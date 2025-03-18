@@ -18,7 +18,7 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/logo/favicon.jpg" sizes="16x16" />
+    <link rel="icon" href="img/logo/favicon.png" sizes="16x16" />
 
     <!-- Bootstrap CDN -->
     <link
@@ -67,10 +67,26 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
 
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
     <script defer src="js/script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/slide-to-submit.css" />
+
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+      defer=""></script>
+    <script src="js/slide-to-submit.js" defer></script>
   </head>
   <body
     data-bs-spy="scroll"
@@ -159,6 +175,12 @@
                   </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="#site_visit_section">
+                    <i class="fa-solid fa-video-camera nav-icon"></i>
+                    <span class="d-sm-inline"> Site Visit </span>
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#about_section">
                     <i class="fa-solid fa-user nav-icon"></i>
                     <span class="d-sm-inline"> About Us </span>
@@ -193,32 +215,20 @@
               data-bs-target="#carousel-Indicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"></button>
-            <button
-              type="button"
-              data-bs-target="#carousel-Indicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                class="d-block w-100 banner0"
+                class="d-block w-100 banner1"
                 width="100%"
-                src="img/banners/desktop_banner1.webp"
+                src="img/banners/desktop_banner1.jpg"
                 alt="Banner1" />
             </div>
             <div class="carousel-item">
               <img
                 class="d-block w-100 banner2"
                 width="100%"
-                src="img/banners/desktop_banner1.webp"
-                alt="Banner2" />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100 banner2"
-                width="100%"
-                src="img/banners/desktop_banner2.webp"
+                src="img/banners/desktop_banner1.jpg"
                 alt="Banner2" />
             </div>
           </div>
@@ -243,10 +253,19 @@
       <!-- Slider Section Ends -->
 
       <!-- Overview Section  -->
-      <section id="overview_section" class="container p-4 mt-3">
-        <h2 class="section-heading text-center text-uppercase pt-3">
-          Welcome To Invicta Ulwe
-        </h2>
+      <section id="overview_section" class="container-fluid p-4">
+        <div class="background_img"></div>
+        <div class="section_heading">
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_top.png" />
+          <h2 class="section-heading text-center text-uppercase">
+            Welcome To Invicta Ulwe
+          </h2>
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_bottom.png" />
+        </div>
 
         <div class="row mt-4 justify-content-center text-center">
           <div class="col-12 col-md-6 overview_img">
@@ -257,7 +276,7 @@
               height="400px" />
           </div>
           <div class="col-12 col-md-6">
-            <div>
+            <div class="mt-4">
               <ul class="highlights">
                 <li>
                   <i class="fa-regular fa-square-check"></i>
@@ -310,7 +329,15 @@
 
       <!-- Gallery Section Starts -->
       <section id="gallery_section" class="container-fluid py-3">
-        <h2 class="section-heading text-center text-uppercase pt-3">gallery</h2>
+        <div class="section_heading">
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_top.png" />
+          <h2 class="section-heading text-center text-uppercase">Gallery</h2>
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_bottom.png" />
+        </div>
         <div class="section-content">
           <div class="container my-5 pb-3">
             <div class="row">
@@ -394,7 +421,17 @@
 
       <!-- Configuration Section -->
       <section id="configuration_section" class="container p-4 mt-3">
-        <h2 class="section-heading">Configuration</h2>
+        <div class="section_heading">
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_top.png" />
+          <h2 class="section-heading text-center text-uppercase">
+            Configuration
+          </h2>
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_bottom.png" />
+        </div>
 
         <div class="location_features_section m-3">
           <div>
@@ -663,7 +700,13 @@
       <!-- Amenities Section -->
       <section id="amenities_section" class="container p-4 mt-4 bg-white">
         <div class="section_heading">
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_top.png" />
           <h2 class="section-heading text-center text-uppercase">Amenities</h2>
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_bottom.png" />
         </div>
         <div class="container">
           <ul class="infographic-cards">
@@ -735,7 +778,7 @@
           <div class="col-md-6">
             <div class="map_bind d-flex justify-content-center">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7538.171883346582!2d73.051953!3d19.147715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c078f3c6088f%3A0xcb6e92d1a2963f63!2sParamount%20by%20Metro%20Group!5e0!3m2!1sen!2sin!4v1701233292316!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2503641548046!2d73.02614142466238!3d18.964547305463114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b2d6a67209%3A0x9bb5671d68f4ff81!2sINVICTA%2C%20Ulwe!5e0!3m2!1sen!2sid!4v1742188444359!5m2!1sen!2sid"
                 width="900"
                 height="450"
                 style="border: 0"
@@ -745,102 +788,138 @@
             </div>
           </div>
           <div class="col-md-6 content">
+            <div class="section_heading">
+              <img
+                class="heading_design"
+                src="img/extras/Invicta-Ulwe-head_top.png" />
+              <h2 class="section-heading text-center text-uppercase">
+                Location Advantages
+              </h2>
+              <img
+                class="heading_design"
+                src="img/extras/Invicta-Ulwe-head_bottom.png" />
+            </div>
             <div class="location-wrap">
-              <div class="about-content">
-                <h1>Location Advantages</h1>
-              </div>
-              <div class="design-img" id="gallery-design">
-                <img src="images/metro-paramount-border-black.webp" />
-              </div>
               <div class="pointsAbout mb-3">
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Airoli Katai Tunnel Road : 5 Mins
-                </p>
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Ghansoli : 10 Mins
-                </p>
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Kalyan Taloja Metro Line : 4 Mins
-                </p>
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Multi Model Corridor : 5 Mins
-                </p>
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Shopping Mall : 5 Mins
-                </p>
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Reputed School : 5 Min
-                </p>
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Neon Hospital : 5 Mins
-                </p>
-
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Navi Mumbai : 15 Mins Drive
-                </p>
-
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Dombivli Station : 20-25 Mins
-                </p>
-                <p class="points">
-                  <i
-                    class="fa-regular fa-hand-point-right"
-                    style="padding-right: 10px"></i
-                  >Panvel Station : 55 Mins
-                </p>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      Bamandongri Station : 5 Mins
+                    </p>
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      KharKopar Station : 5 Mins
+                    </p>
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      International School : 5 Mins
+                    </p>
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      Sports Complex : 5 Minss
+                    </p>
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      Reliance Smart Point : 5 Mins
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      Grand Central Mall : 10 Mins
+                    </p>
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      Hospital's : 5 Mins
+                    </p>
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      MTHL : 5 Mins
+                    </p>
+                    <p class="points">
+                      <i
+                        class="fa-regular fa-hand-point-right"
+                        style="padding-right: 10px"></i>
+                      International Airport : 10 Min
+                    </p>
+                  </div>
+                </div>
               </div>
-              <!-- <div class="btnWrapper">
-            <button class="btn btn-lg btn-block btn-outline-dark btn-price" type="button" data-bs-toggle="modal"
-              data-bs-target="#popupModal">Book Site Visit Now</button>
-          </div> -->
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-        <div class="col-md-10 offset-md-1">
-          <div class="map_inner">
-            <div class="map-lab" style="text-align: center;">
-              <h3>Find Us on Google Map</h3>
-            </div>
-            <div class="design-img" style="text-align: center;">
-              <img src="images/metro-paramount-border-black.webp">
-            </div>
-            <div class="map_bind d-flex justify-content-center">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7538.171883346582!2d73.051953!3d19.147715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c078f3c6088f%3A0xcb6e92d1a2963f63!2sParamount%20by%20Metro%20Group!5e0!3m2!1sen!2sin!4v1701233292316!5m2!1sen!2sin"
-                width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <!-- site_visit -->
+      <section id="site_visit_section" class="container-fluid p-4 mt-3">
+        <div class="section_heading">
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_top.png" />
+          <h2 class="section-heading text-center text-uppercase">
+            Virtual Site Visit
+          </h2>
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_bottom.png" />
+        </div>
+
+        <div class="about_overlay pt-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6 about-para-container mt-2">
+                <div class="container virtual-visit">
+                  <div
+                    class="bg-image d-flex align-items-center text-white text-center">
+                    <div class="tour-img">
+                      <div class="overlay-info">
+                        <i
+                          class="fa-solid fa-circle-play play-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#popupModal"></i>
+                        <h3 class="fs-1">Virtual Home Tour</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 about-para-container mt-2">
+                <div class="container virtual-visit">
+                  <div
+                    class="bg-image bg_img d-flex align-items-center text-white text-center">
+                    <div class="tour-img">
+                      <div class="overlay-info">
+                        <i
+                          class="fa-solid fa-circle-play play-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#popupModal"></i>
+                        <h3 class="fs-1">360° View</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div> -->
       </section>
 
       <!-- About Section -->
@@ -851,29 +930,30 @@
               <div class="col-12 col-lg-6 p-5 about-para-container">
                 <div class="text-center">
                   <h2 class="section-heading text-white">
-                    About Maa & Superb Group
+                    About Invicta Group
                   </h2>
 
                   <div class="text-white about-para">
                     <p>
-                      Superb Group, since 1983, has created over 50 projects,
-                      delivering 900,000 sq ft of space and more than 1,050
-                      exceptional living units. We are known for innovation and
-                      excellence in real estate development. Our large-scale
-                      housing developments redefine urban living in
-                      Maharashtra's tier-two cities. Maa Group, founded in 2014,
-                      is a well-established real estate group in Gujarat. They
-                      are experts in real estate development and the mineral
-                      business.
+                      Avianna Infra LLP, established in October 2021, is a
+                      notable developer in Navi Mumbai's real estate sector,
+                      focusing on innovative designs and timely project
+                      delivery. Their flagship project, Avianna Invicta, is
+                      situated in Ulwe, a rapidly developing suburb. This
+                      residential development offers 1, 2, and 3 BHK apartments
+                      with carpet areas ranging from 344 to 822 sq ft, catering
+                      to diverse homeowner needs.
                     </p>
                     <span id="dots8" style="display: inline"></span>
                     <span id="more8" style="display: none">
                       <p>
-                        Maa Estate has delivered township projects in
-                        Surendranagar, Gujarat. Over the past 10 years, they
-                        have successfully completed six projects across Gujarat,
-                        known for their timely delivery and exceptional quality
-                        homes.
+                        The project spans 0.92 acres and comprises two towers,
+                        each with 11 floors, totaling 159 units. Amenities
+                        include a gymnasium, power backup, children's play area,
+                        and a swimming pool, enhancing the living experience.
+                        Strategically located, Avianna Invicta provides
+                        residents with easy access to essential services, making
+                        it a preferred choice for home seekers in Navi Mumbai.
                       </p>
                     </span>
                   </div>
@@ -928,6 +1008,8 @@
                             name="contact_number"
                             pattern="[0-9]{10}"
                             placeholder="Phone Number"
+                            minlength="10"
+                            maxlength="10"
                             oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
                             oninput="setCustomValidity('')"
                             required />
@@ -978,20 +1060,11 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container text-center text-white">
-        <div class="d-flex justify-content-center">
+        <!-- <div class="d-flex justify-content-center">
           <div class="qrcode">
             <img src="img/logo/footer logo.png" />
-            <p class="m-0 p-0">
-              Delta Group has been a trailblazer for 40 Year's in the real
-              estate industry, leaving an indelible mark on the landscape of
-              luxury living, with a legacy build on trust, innovation, and
-              excellence. We have over 16 projects currently in various stages
-              of construction, showcasing our ability to manage and execute on a
-              grant scale! Delta Group's Impressive portfolio boasts an
-              astonishing 32 lakhs Sq.ft of delivered project.
-            </p>
           </div>
-        </div>
+        </div> -->
 
         <div class="">
           <small>
@@ -1014,12 +1087,8 @@
               <li>
                 Project Registered under Government of India RERA Act 2016
               </li>
-              <li>RERA Project Registration No:- P52000078574</li>
-
-              <li>
-                <b>Site Address:</b> Delta Prestige, Plot No. 25, Sector 17,
-                Panvel
-              </li>
+              <li>RERA Project Registration No:- P52000047387</li>
+              <li><b>Site Address:</b>Plot No - 349, Sector - 26, Ulwe</li>
             </ul>
           </small>
         </div>
@@ -1071,9 +1140,7 @@
           </p>
 
           <div class="mt-4">
-            <p>
-              Copyright © 2025 VYOM SUPERSTRUCTURES LLP. All RightsReserved.
-            </p>
+            <p>Copyright © 2025 --- --- ---. All RightsReserved.</p>
             <p class="pb-4 policy_links">
               Designed & Developed by
               <a
@@ -1139,7 +1206,7 @@
           <!-- Modal Body -->
           <div class="modal-body">
             <div class="container text-center modal-logo">
-              <img src="img/logo/logo.png" alt="" height="50px" />
+              <img src="img/logo/logo.png" alt="" height="80px" />
 
               <p class="mt-2">Register Here And Avail The Best Offers!!</p>
             </div>

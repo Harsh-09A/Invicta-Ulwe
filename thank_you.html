@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{Project Name}</title>
+    <title>Invicta Ulwe</title>
 
     <!-- SEO -->
     <meta property="og:title" content="" />
@@ -13,7 +13,7 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/logo/favicon.jpg" sizes="16x16" />
+    <link rel="icon" href="img/logo/favicon.png" sizes="16x16" />
 
     <!-- Bootstrap CDN -->
     <link
@@ -58,10 +58,26 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
 
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
     <script defer src="js/script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/slide-to-submit.css" />
+
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+      defer=""></script>
+    <script src="js/slide-to-submit.js" defer></script>
   </head>
   <body
     data-bs-spy="scroll"
@@ -75,15 +91,15 @@
     <header class="fixed-top shadow-sm">
       <nav
         class="navbar navbar-expand-lg mx-auto"
-        style="background-color: #ffffff"
+        style="background-color: #064240"
         id="main-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
               id="logo"
-              src="img/logo/logo.svg"
+              src="img/logo/logo.png"
               alt="Logo"
-              height="60px"
+              height="80px"
               style="padding-left: 10%" />
           </a>
           <button
@@ -139,6 +155,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="index.html#site_visit_section">
+                  <i class="fa-solid fa-video-camera nav-icon"></i>
+                  <span class="d-sm-inline"> Site Visit </span>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="index.html#about_section">
                   <i class="fa-solid fa-user nav-icon"></i>
                   <span class="d-sm-inline"> About Us </span>
@@ -166,58 +188,58 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container text-center text-white">
-        <div class="d-flex justify-content-center">
-          <div class="qrcode">
-            <img src="img/qr/qr.webp" class="m-2" />
-          </div>
+        <!-- <div class="d-flex justify-content-center">
+      <div class="qrcode">
+        <img src="img/logo/footer logo.png" />
+      </div>
+    </div> -->
+
+        <div class="">
+          <small>
+            <style>
+              .newlist {
+                list-style: none;
+                line-height: 25px;
+                padding-left: 22px;
+                text-align: center;
+              }
+              .newlist li:before {
+                content: "✓";
+                font-weight: 800;
+                margin-right: 10px;
+                font-size: 13px;
+                margin-left: -22px;
+              }
+            </style>
+            <ul class="newlist">
+              <li>
+                Project Registered under Government of India RERA Act 2016
+              </li>
+              <li>RERA Project Registration No:- P52000047387</li>
+              <li><b>Site Address:</b>Plot No - 349, Sector - 26, Ulwe</li>
+            </ul>
+          </small>
         </div>
         <div>
-          <p>MahaRERA Registration No.: P51800020208</p>
-
-          <p>
-            <a
-              href="https://maharera.mahaonline.gov.in"
-              style="color: #fff; text-decoration: none">
-              maharera.mahaonline.gov.in
-            </a>
-          </p>
-
-          <!-- <div class="text-center">
-                  <p class="contact_details">
-                      <b> Site Address:-</b> ---
-                      <br />
-                      <b> Contact No:-</b> +91 ---
-                      <br />
-                      <b> Email Address:-</b> support@---.com
-                  </p>
-              </div> -->
-
           <div>
             <span>
-              Disclaimer : The information provided on this website is intended
-              exclusively for informational purposes and the pricing information
-              presented on this website is subject to alteration without advance
-              notification, and the assurance of property availability cannot be
-              guaranteed. The images showcased on this website are for
-              representational purposes only and may not accurately reflect the
-              actual properties. Please Note That This Is The Official Website
-              Of ------- by -----------.
+              Disclaimer: The contents of this Marketing ad including
+              photographs, images, designs, plans, specifications, layout,
+              height, dimensions, facilities, vegetation, features and
+              communication are merely an artistic impression and imagination
+              and may not have resemblance to actual project on site. The actual
+              and physical features, amenities and facilities in the Buildings
+              or the premises would be in accordance with plans and
+              specifications approved by the authorities and the agreement for
+              sale to be executed with the Promoter.
             </span>
             <span id="dots20" style="display: inline"></span>
             <span id="more20" style="display: none">
               <span>
-                We May Share Data With Real Estate Regulatory Authority (RERA)
-                Registered Brokers/Companies For Further Processing As Required.
-                We May Also Send Updates And Information To The Mobile Number Or
-                Email ID Registered With Us. All rights reserved. The content,
-                design, and information on this website are protected by
-                copyright and other intellectual property rights. Any
-                unauthorized use or reproduction of the content may violate
-                applicable laws. For accurate and up-to-date information
-                regarding services, pricing, availability, and any other
-                details, it is recommended to contact us directly through the
-                provided contact information on this website. Thank you for
-                visiting our website.
+                For accurate and up-to-date information regarding services,
+                pricing, availability, and any other details, it is recommended
+                to contact us directly through the provided contact information
+                on this website. Thank you for visiting our website.
               </span>
             </span>
             <br />
@@ -229,7 +251,7 @@
             </span>
           </div>
 
-          <p class="pb-4 pt-2">
+          <p class="pb-4 policy_links">
             <a
               href="privacy_policy.html"
               target="_blank"
@@ -244,6 +266,19 @@
               Terms And Conditions
             </a>
           </p>
+
+          <div class="mt-4">
+            <p>Copyright © 2025 --- --- ---. All RightsReserved.</p>
+            <p class="pb-4 policy_links">
+              Designed & Developed by
+              <a
+                href="https://letsdigin.in/"
+                target="_blank"
+                style="text-decoration: none"
+                >DigIN Media</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </footer>
@@ -251,23 +286,22 @@
     <!-- Mobile Footer Fixed Button -->
     <div class="container-fluid fixed-bottom action-footer-container">
       <ul class="nav nav-fill action-footer">
-        <li class="nav-item ps-1">
-          <a
-            onclick="return gtag_report_conversion('https://wa.me/+91123456789 ');"
-            href="https://wa.me/+91123456789 "
-            class="text-decoration-none text-white">
-            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <a class="text-decoration-none">
+            <i class="fa-solid fa-taxi nav-icon"> </i> Site Visit
           </a>
         </li>
-        <li class="nav-item ps-1">
-          <a
-            onclick="return gtag_report_conversion('tel:+91123456789 ');"
-            href="tel:+91123456789 "
-            class="text-decoration-none text-white">
-            <i class="fa-solid fa-phone me-2"></i> Call Us
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <a class="text-decoration-none">
+            <i class="fa-solid fa-phone me-2"></i> Call Back
           </a>
         </li>
-
         <li
           class="nav-item"
           data-bs-toggle="modal"
@@ -276,6 +310,7 @@
         </li>
       </ul>
     </div>
+    <!-- Mobile Footer Fixed Button Ends -->
 
     <!-- Modal -->
     <div
@@ -298,8 +333,9 @@
 
           <!-- Modal Body -->
           <div class="modal-body">
-            <div class="container text-center">
-              <img src="img/logo/logo.svg" alt="" height="80px" />
+            <div class="container text-center modal-logo">
+              <img src="img/logo/logo.png" alt="" height="80px" />
+
               <p class="mt-2">Register Here And Avail The Best Offers!!</p>
             </div>
             <div class="container">
@@ -392,6 +428,21 @@
                     </p>
                   </form>
                 </div>
+
+                <div class="or">or</div>
+
+                <div class="slide-submit poppins-regular poppins-regular">
+                  <button
+                    id="slide-submit-btn"
+                    class="poppins-regular ui-draggable ui-draggable-handle"
+                    style="left: 0px; transition: 100ms linear">
+                    <img
+                      loading="lazy"
+                      alt="Delta Prestige"
+                      src="./img/extras/swipe-arrow.png" />
+                  </button>
+                  <label> Slide to connect on WhatsApp</label>
+                </div>
               </div>
             </div>
           </div>
@@ -401,11 +452,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"></script>
   </body>
 </html>

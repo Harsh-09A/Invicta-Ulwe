@@ -3,11 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/") format("truetype");
-} */
+@font-face {
+  font-family: "Trajan_Pro_Bold";
+  src: url("../fonts/Trajan_Pro_Bold.ttf") format("truetype");
+}
 
+@font-face {
+  font-family: "varsity_regular";
+  src: url("../fonts/varsity_regular.ttf") format("truetype");
+}
 :root,
 html {
   font-family: Roboto, "Times New Roman", Times, serif;
@@ -71,17 +75,19 @@ header {
     height: 45px;
   }
 }
-
+.navbar-toggler-icon {
+  background-image: url("../img/extras/menu.svg") !important;
+}
 /* Navbar Ends */
 
 main {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 /* Slider */
 .carousel {
   overflow: hidden !important;
-  max-height: calc(100vh - 80px);
+  max-height: calc(100vh - 60px);
 }
 
 .carousel-indicators .active {
@@ -89,9 +95,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  .carousel-item .banner0 {
-    content: url("../img/banners/mobile_banner0.jpg");
-  }
   .carousel-item .banner1 {
     content: url("../img/banners/mobile_banner1.jpg");
   }
@@ -272,9 +275,54 @@ main {
     width: calc(100% / 1.2);
   }
 }
+
+/* Virtual Tour Section */
+
+.virtual-visit {
+  height: 500px;
+}
+
+.bg-image {
+  background-image: url("../img/gallery/gallery_1.webp");
+  height: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /*  */
+  border-radius: 30px;
+}
+.bg_img {
+  background-image: url("../img/gallery/gallery_2.webp");
+}
+
+.tour-img {
+  height: fit-content;
+  width: 100%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.play-btn {
+  font-size: 4vw;
+}
+.overlay-info:hover {
+  transform: scale(0.9);
+  transition: ease-in-out;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+}
+/* For Mobile */
+@media only screen and (max-width: 990px) {
+  .play-btn {
+    font-size: 50px;
+  }
+}
+
 /* About */
 #about_section {
-  background-color: #00354a;
+  /* background-color: #00354a; */
+  background-color: #2a3c02;
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 970px; */
@@ -340,4 +388,26 @@ main {
 
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.section_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.heading_design {
+  width: 200px;
+}
+
+#overview_section {
+  background: url("../img/extras/Invicta-background-2-rotated-50.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offcanvas-body {
+  background-color: var(--colorPrimary);
 }
