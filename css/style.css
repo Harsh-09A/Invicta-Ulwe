@@ -75,6 +75,16 @@ header {
     height: 45px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .mobileview {
+    display: none;
+  }
+}
+
+.head_call_btn {
+  color: var(--colorSecondary);
+}
 .navbar-toggler-icon {
   background-image: url("../img/extras/menu.svg") !important;
 }
@@ -96,10 +106,10 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner1.jpg");
+    content: url("../img/banners/mobile_banner01.jpg");
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner2.jpg");
+    content: url("../img/banners/mobile_banner03.jpg");
   }
 }
 

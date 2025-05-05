@@ -87,90 +87,115 @@
     class="scrollspy"
     tabindex="0"
     data-offset="1">
-    <!-- Header  -->
+    <!-- Header Starts  -->
     <header class="fixed-top shadow-sm">
       <nav
         class="navbar navbar-expand-lg mx-auto"
         style="background-color: #064240"
         id="main-navbar">
         <div class="container-fluid">
+          <a
+            href="tel:+918899117040"
+            class="mobileview"
+            style="margin-top: 0 !important">
+            <!-- <img
+        src="img/extras/call-icon.gif"
+        alt="phone-img"
+        class="gif-img"
+        width="50px" /> -->
+            <i class="fa-solid fa-phone fs-2 me-4 fa-beat head_call_btn"></i>
+          </a>
+
           <a class="navbar-brand" href="index.html">
             <img
-              id="logo"
-              src="img/logo/logo.png"
+              src="img/logo/logo_2.png"
               alt="Logo"
               height="80px"
               style="padding-left: 10%" />
           </a>
+
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"> </span>
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html#slider_section">
-                  <i class="fa-solid fa-house nav-icon"></i>
-                  <span class="d-sm-inline"> Home </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#overview_section">
-                  <i class="fa-solid fa-coins nav-icon"></i>
-                  <span class="d-sm-inline"> Overview </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#gallery_section">
-                  <i class="fa-solid fa-images nav-icon"></i>
-                  <span class="d-sm-inline"> Gallery </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#configuration_section">
-                  <i class="fa-solid fa-sliders nav-icon"></i>
-                  <span class="d-sm-inline"> Configuration </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#amenities_section">
-                  <i class="fa-solid fa-wifi nav-icon"></i>
-                  <span class="d-sm-inline"> Amenities </span>
-                </a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#location_section">
-                  <i class="fa-solid fa-map-location nav-icon"></i>
-                  <span class="d-sm-inline"> Location </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#site_visit_section">
-                  <i class="fa-solid fa-video-camera nav-icon"></i>
-                  <span class="d-sm-inline"> Site Visit </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#about_section">
-                  <i class="fa-solid fa-user nav-icon"></i>
-                  <span class="d-sm-inline"> About Us </span>
-                </a>
-              </li>
-            </ul>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html#slider_section">
+                    <i class="fa-solid fa-house nav-icon"></i>
+                    <span class="d-sm-inline"> Home </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#overview_section">
+                    <i class="fa-solid fa-coins nav-icon"></i>
+                    <span class="d-sm-inline"> Overview </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#gallery_section">
+                    <i class="fa-solid fa-images nav-icon"></i>
+                    <span class="d-sm-inline"> Gallery </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#configuration_section">
+                    <i class="fa-solid fa-sliders nav-icon"></i>
+                    <span class="d-sm-inline"> Configuration </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#amenities_section">
+                    <i class="fa-solid fa-wifi nav-icon"></i>
+                    <span class="d-sm-inline"> Amenities </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#location_section">
+                    <i class="fa-solid fa-map-location nav-icon"></i>
+                    <span class="d-sm-inline"> Location </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#site_visit_section">
+                    <i class="fa-solid fa-video-camera nav-icon"></i>
+                    <span class="d-sm-inline"> Site Visit </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#about_section">
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    <span class="d-sm-inline"> About Us </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
+    <!-- Header Ends  -->
     <main>
       <section id="thanku_section" class="container mt-5 p-4">
         <div class="text-center">
@@ -189,10 +214,10 @@
     <footer id="footer">
       <div class="container text-center text-white">
         <!-- <div class="d-flex justify-content-center">
-      <div class="qrcode">
-        <img src="img/logo/footer logo.png" />
-      </div>
-    </div> -->
+          <div class="qrcode">
+            <img src="img/logo/footer logo.png" />
+          </div>
+        </div> -->
 
         <div class="">
           <small>
@@ -216,7 +241,7 @@
                 Project Registered under Government of India RERA Act 2016
               </li>
               <li>RERA Project Registration No:- P52000047387</li>
-              <li><b>Site Address:</b>Plot No - 349, Sector - 26, Ulwe</li>
+              <li><b>Site Address: </b>Plot No - 349, Sector - 26, Ulwe</li>
             </ul>
           </small>
         </div>
@@ -268,7 +293,9 @@
           </p>
 
           <div class="mt-4">
-            <p>Copyright © 2025 --- --- ---. All RightsReserved.</p>
+            <p>
+              Copyright © 2025 Invicta (Avianna Infra LLP). All RightsReserved.
+            </p>
             <p class="pb-4 policy_links">
               Designed & Developed by
               <a
