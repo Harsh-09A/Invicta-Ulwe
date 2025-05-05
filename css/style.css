@@ -91,7 +91,7 @@ header {
 /* Navbar Ends */
 
 main {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 /* Slider */
@@ -106,17 +106,23 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner01.jpg");
+    content: url("../img/banners/mobile_banner_01.jpg");
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner03.jpg");
+    content: url("../img/banners/mobile_banner_02.jpg");
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .carousel-control-prev {
-    display: none;
-  }
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: var(--colorPrimary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 20px;
+  /* display: none; */
 }
 
 /* gallery */
