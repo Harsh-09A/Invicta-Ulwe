@@ -106,10 +106,10 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner_01.jpg");
+    content: url("../img/banners/mobile_banner_02.jpg");
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner_02.jpg");
+    content: url("../img/banners/mobile_banner_01.jpg");
   }
 }
 
