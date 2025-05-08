@@ -10,7 +10,7 @@ $(".slide-submit button")
       console.log($(this).position().left);
       if ($(this).parent().width() / 2 < $(this).position().left + 100) {
         // window.open(
-        // 	'https://api.whatsapp.com/send?phone=+917304411022&amp;text=I’m interested in the Godrej Bhandup project. Please send brochure and price details.',
+        // 	'https://api.whatsapp.com/send?phone=+919236300200&amp;text=I’m interested in the Godrej Bhandup project. Please send brochure and price details.',
         // 	'_blank' // <- This is what makes it open in a new window.
         //   );
         // alert();
@@ -18,7 +18,7 @@ $(".slide-submit button")
         //   $('.whatsappClickClass').trigger('click');
         //wa.me/+919765277792?text=I'm%20interested%20in%20your%20car%20for%20sale
         https: location.href =
-          "https://wa.me/+919768478650?text=I'm Interested In Invicta Ulwe Project. Please Send Brochure And Price Details.";
+          "https://wa.me/+919236300200?text=I'm Interested In Invicta Ulwe Project. Please Send Brochure And Price Details.";
 
         $(this).next().css({ "margin-left": 0 }).text("Launching WhatsApp");
         $(this).draggable("false");
