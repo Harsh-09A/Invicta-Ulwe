@@ -33,8 +33,8 @@ $post_data = array(
     ],
     "products" => [
         [
-            "id" => 301831,
-            "name" => "Delta Prestige",
+            "id" => 105322,
+            "name" => "Invicta Ulwe",
         ]
     ],
     "source" => 1090623
