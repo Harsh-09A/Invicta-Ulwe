@@ -23,7 +23,7 @@
       content="Premium homes in Ulwe. Near railway station. Site visit available." />
     <meta
       property="og:image"
-      content="https://invicta-ulwe.com/images/banner.jpg" />
+      content="https://invicta-ulwe.com/img/overview/overview.jpg" />
     <!-- replace with real image URL -->
     <meta property="og:url" content="https://invicta-ulwe.com/" />
     <meta property="og:type" content="website" />
@@ -89,9 +89,9 @@
       crossorigin="anonymous"></script>
 
     <!-- Custom CSS & JS  -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?v=2" />
     <link rel="stylesheet" href="css/common.css" />
-    <script defer src="js/script.js"></script>
+    <script defer src="js/script.js?v=2"></script>
 
     <link
       rel="stylesheet"
@@ -101,7 +101,7 @@
     <script
       src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
       defer=""></script>
-    <script src="js/slide-to-submit.js" defer></script>
+    <script src="js/slide-to-submit.js?v=2" defer></script>
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -116,6 +116,10 @@
 
       gtag("config", "AW-17062207977");
     </script>
+
+    <!-- PDF.js Express Viewer (Free Open Source) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfjs-dist/3.8.162/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfjs-dist/3.8.162/pdf.worker.min.js"></script>
   </head>
   <body
     data-bs-spy="scroll"
@@ -133,7 +137,7 @@
         id="main-navbar">
         <div class="container-fluid">
           <a
-            href="tel:+919236300200"
+            href="tel:+917977534717"
             class="mobileview"
             style="margin-top: 0 !important">
             <!-- <img
@@ -360,7 +364,8 @@
             <button
               class="btn btn-outline-dark download_btn"
               data-bs-toggle="modal"
-              data-bs-target="#popupModal">
+              data-bs-target="#popupModal"
+              data-modal-title="Download Brochure">
               <i class="fa-solid fa-download nav-icon"></i> Download Brochure
             </button>
           </div>
@@ -567,14 +572,16 @@
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Download Brochure">
                         <i class="fa-solid fa-download nav-icon"></i> Download
                         Brochure
                       </button>
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Open All Floor Plans">
                         <i class="fa-solid fa-folder-open nav-icon"></i> Open
                         All Floor Plans
                       </button>
@@ -617,14 +624,16 @@
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Download Brochure">
                         <i class="fa-solid fa-download nav-icon"></i> Download
                         Brochure
                       </button>
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Open All Floor Plans">
                         <i class="fa-solid fa-folder-open nav-icon"></i> Open
                         All Floor Plans
                       </button>
@@ -667,14 +676,16 @@
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Download Brochure">
                         <i class="fa-solid fa-download nav-icon"></i> Download
                         Brochure
                       </button>
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Open All Floor Plans">
                         <i class="fa-solid fa-folder-open nav-icon"></i> Open
                         All Floor Plans
                       </button>
@@ -717,14 +728,16 @@
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Download Brochure">
                         <i class="fa-solid fa-download nav-icon"></i> Download
                         Brochure
                       </button>
                       <button
                         class="btn btn-outline-dark download_btn text-center"
                         data-bs-toggle="modal"
-                        data-bs-target="#popupModal">
+                        data-bs-target="#popupModal"
+                        data-modal-title="Open All Floor Plans">
                         <i class="fa-solid fa-folder-open nav-icon"></i> Open
                         All Floor Plans
                       </button>
@@ -812,23 +825,135 @@
           </ul>
         </div>
       </section>
+      <!-- Media Section -->
+      <section id="media_section" class="container-fluid p-4 mt-3 mb-3 pb-3">
+        <div class="section_heading">
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_top.png" />
+          <h2 class="section-heading text-center text-uppercase">
+            Media Coverage
+          </h2>
+          <img
+            class="heading_design"
+            src="img/extras/Invicta-Ulwe-head_bottom.png" />
+        </div>
+        <div class="container pt-2">
+          <div class="row">
+            <!-- PDF Viewer Column -->
+            <div class="col-12 col-lg-6">
+              <div class="media-container">
+                <div class="media-header">
+                  <!-- <span class="feature-icon">📄</span> -->
+                  <h3>Times Spotlight News</h3>
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#popupModal"
+                    data-modal-title="Get Details"
+                    class="status-badge">
+                    Get Details
+                  </div>
+                </div>
+                <div class="media-content">
+                  <div class="pdf-viewer" id="pdfViewer">
+                    <!-- Using Mozilla PDF.js viewer with local PDF file -->
+                    <iframe
+                      class="pdf-embed"
+                      src="assets/Times_Spotligh_May_2025_Page_01.pdf"
+                      title="PDF Viewer">
+                    </iframe>
+
+                    <!-- Fallback for browsers that don't support iframe or local file access -->
+                    <div class="pdf-fallback" style="display: none">
+                      <div>
+                        <h4>📄 PDF Document</h4>
+                        <p class="text-muted">
+                          Place your PDF file named "sample-document.pdf" in the
+                          same folder as this HTML file.
+                        </p>
+                        <p class="text-muted">
+                          <small
+                            >Note: Local file access may be restricted in some
+                            browsers due to security policies.</small
+                          >
+                        </p>
+                        <a
+                          href="assets/Times_Spotligh_May_2025_Page_01.pdf"
+                          target="_blank">
+                          Open PDF File
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Video Viewer Column -->
+            <div class="col-12 col-lg-6">
+              <div class="media-container">
+                <div class="media-header">
+                  <!-- <span class="feature-icon">🎥</span> -->
+                  <h3>News Interiew</h3>
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#popupModal"
+                    data-modal-title="View Full Video"
+                    class="status-badge">
+                    View Full Video
+                  </div>
+                </div>
+                <div class="media-content">
+                  <video
+                    class="video-player"
+                    controls
+                    preload="metadata"
+                    poster="img/overview/overview.jpg">
+                    <source src="assets/video.mp4" type="video/mp4" />
+                    <p class="text-center text-muted">
+                      Your browser doesn't support HTML5 video. Place your MP4
+                      file named "sample-video.mp4" in the same folder as this
+                      HTML file.
+                    </p>
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Media Section Ends -->
 
       <!-- Location Section -->
       <section id="location_section" class="map_sec container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="map_bind d-flex justify-content-center">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2503641548046!2d73.02614142466238!3d18.964547305463114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b2d6a67209%3A0x9bb5671d68f4ff81!2sINVICTA%2C%20Ulwe!5e0!3m2!1sen!2sid!4v1742188444359!5m2!1sen!2sid"
-                width="900"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- Map Viewer Column -->
+          <div class="col-12 col-lg-6 order-1 order-md-0">
+            <div class="media-container">
+              <div class="media-header">
+                <!-- <span class="feature-icon">📄</span> -->
+                <h3>Property Location</h3>
+                <div
+                  data-bs-toggle="modal"
+                  data-bs-target="#popupModal"
+                  data-modal-title="Book Site Visit"
+                  class="status-badge">
+                  Book Site Visit
+                </div>
+              </div>
+              <div class="media-content">
+                <div class="map-viewer" id="mapViewer">
+                  <iframe
+                    class="map-embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2503641548046!2d73.02614142466238!3d18.964547305463114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3b2d6a67209%3A0x9bb5671d68f4ff81!2sINVICTA%2C%20Ulwe!5e0!3m2!1sen!2sid!4v1742188444359!5m2!1sen!2sid"
+                    allowfullscreen="true"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 content">
+
+          <div class="col-md-6 content order-0 order-md-1">
             <div class="section_heading">
               <img
                 class="heading_design"
@@ -934,7 +1059,8 @@
                         <i
                           class="fa-solid fa-circle-play play-btn"
                           data-bs-toggle="modal"
-                          data-bs-target="#popupModal"></i>
+                          data-bs-target="#popupModal"
+                          data-modal-title="Virtual Home Tour"></i>
                         <h3 class="fs-1">Virtual Home Tour</h3>
                       </div>
                     </div>
@@ -951,7 +1077,8 @@
                         <i
                           class="fa-solid fa-circle-play play-btn"
                           data-bs-toggle="modal"
-                          data-bs-target="#popupModal"></i>
+                          data-bs-target="#popupModal"
+                          data-modal-title="360° View"></i>
                         <h3 class="fs-1">360° View</h3>
                       </div>
                     </div>
@@ -1204,7 +1331,8 @@
         <li
           class="nav-item ps-1"
           data-bs-toggle="modal"
-          data-bs-target="#popupModal">
+          data-bs-target="#popupModal"
+          data-modal-title="Book Site Visit">
           <a class="text-decoration-none">
             <i class="fa-solid fa-taxi nav-icon"> </i> Site Visit
           </a>
@@ -1212,7 +1340,8 @@
         <li
           class="nav-item ps-1"
           data-bs-toggle="modal"
-          data-bs-target="#popupModal">
+          data-bs-target="#popupModal"
+          data-modal-title="Get Call Back">
           <a class="text-decoration-none">
             <i class="fa-solid fa-phone me-2"></i> Call Back
           </a>
@@ -1220,7 +1349,8 @@
         <li
           class="nav-item"
           data-bs-toggle="modal"
-          data-bs-target="#popupModal">
+          data-bs-target="#popupModal"
+          data-modal-title="Download Brochure">
           <i class="fa-solid fa-download nav-icon"></i> Brochure
         </li>
       </ul>
@@ -1238,10 +1368,10 @@
         <div class="modal-content">
           <!-- Modal Title -->
           <div class="modal-header">
-            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Modal title</h1> -->
+            <h1 class="modal-title fs-5" id="ModalLabel">Enquire Now</h1>
             <button
               type="button"
-              class="btn-close"
+              class="btn-close btn-close-white"
               data-bs-dismiss="modal"
               aria-label="Close"></button>
           </div>
@@ -1373,5 +1503,53 @@
       src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
       id="aisensy-wa-widget"
       widget-id="aaaeze"></script>
+    <script>
+      // Enhanced interactions and iframe error handling
+      document.addEventListener("DOMContentLoaded", function () {
+        const iframe = document.querySelector(".pdf-embed");
+        const fallback = document.querySelector(".pdf-fallback");
+
+        // Handle iframe load errors
+        iframe.addEventListener("error", function () {
+          iframe.style.display = "none";
+          fallback.style.display = "flex";
+        });
+
+        // Check if iframe loaded successfully after timeout
+        setTimeout(function () {
+          try {
+            // If iframe didn't load properly, show fallback
+            if (!iframe.contentDocument && !iframe.contentWindow) {
+              iframe.style.display = "none";
+              fallback.style.display = "flex";
+            }
+          } catch (e) {
+            // Cross-origin restrictions - this is normal for external PDFs
+            console.log("PDF viewer loaded (cross-origin restrictions apply)");
+          }
+        }, 3000);
+      });
+
+      // Add smooth hover effects
+      document.querySelectorAll(".media-container").forEach((container) => {
+        container.addEventListener("mouseenter", function () {
+          if (!this.classList.contains("hovering")) {
+            this.style.transform = "translateY(-4px)";
+            this.classList.add("hovering");
+          }
+        });
+
+        container.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0)";
+          this.classList.remove("hovering");
+        });
+      });
+
+      // Add loading states for better UX
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1";
+        document.body.style.transition = "opacity 0.5s ease-in-out";
+      });
+    </script>
   </body>
 </html>
